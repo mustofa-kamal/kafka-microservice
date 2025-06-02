@@ -14,27 +14,6 @@ http://localhost:8081/api/rider-events
 
 }
 
-http://localhost:8081/api/trips/217d338d-06cc-4f30-980c-ba3a6e002979/history
-
-
-
-//DLT topic from consumer
-
-kafka-console-consumer \
-
- --bootstrap-server localhost:9092 \
-
- --topic trip-feedback-dlt \
-
- --from-beginning
-
-
-
-
-
-
-
-
 
 http://localhost:8081/api/trip-events
 
@@ -109,3 +88,18 @@ http://localhost:8081/api/feedback
  "reason": "Wrong address"
 
 }
+
+
+http://localhost:8081/api/trips/217d338d-06cc-4f30-980c-ba3a6e002979/history
+
+
+
+//DLT topic from consumer
+
+kafka-console-consumer \
+
+ --bootstrap-server localhost:9092 \
+
+ --topic trip-feedback-dlt \
+
+ --from-beginning
